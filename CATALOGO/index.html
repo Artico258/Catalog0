@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogo</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/2.png" alt="Bonixx" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="index.html" class="btn btn-outline-primary me-2 nav-bold">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-primary me-2" id="toggleCartButton" onclick="toggleCart()">🛒 Carrito</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</head>
+<body>
+<header>
+<h1>Nombre De tu tienda Bonixx...</h1>
+</header>
+
+<div class="container">
+
+<div class="card" data-id="1" data-name="Camas Tipo Sofá" data-price="65">
+
+    <div class="image default" style="background-image: url('img/173610-800-800\ \(1\).jpg');"></div>
+    <div class="image hover" style="background-image: url('imagenes/Camita.jpg');"></div>
+    <div class="info">
+        <h3>Producto 1</h3>
+        <p>ponle info de tus productos</p>
+        <p class="price">65.00 Bs</p>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+    </div>
+</div>
+
+
+<div class="card" data-id="2" data-name="Cobija Sencilla" data-price="25">
+    <div class="image default" style="background-image: url('img/4.jpg');"></div>
+    <div class="image hover" style="background-image: url('imagenes/Toallita2.jpg');"></div>
+    <div class="info">
+        <h3>Producto 2</h3>
+        <p>ponle info de tus productos</p>
+        <p class="price">25.00 Bs</p>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+    </div>
+</div>
+<div class="card" data-id="3" data-name="Tapete Absorbente" data-price="40">
+    <div class="image default" style="background-image: url('img/6.jpg');"></div>
+    <div class="image hover" style="background-image: url('imagenes/Tapete2.jpg');"></div>
+    <div class="info">
+        <h3>Producto 3</h3>
+        <p>ponle info de tus productos</p>
+        <p class="price">40.00 Bs</p>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+    </div>
+</div>
+
+<div class="card" data-id="4" data-name="Cama cojín" data-price="28">
+    <div class="image default" style="background-image: url('img/4.jpg');"></div>
+    <div class="image hover" style="background-image: url('imagenes/Cobija2.jpg');"></div>
+    <div class="info">
+        <h3>Producto 4</h3>
+        <p>ponle info de tus productos</p>
+        <p class="price">28.00 Bs</p>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+    </div>
+</div>
+
+
+<div class="card" data-id="5" data-name="Enterizo" data-price="52">
+    <div class="image default" style="background-image: url('img/173610-800-800\ \(1\).jpg');"></div>
+    <div class="image hover" style="background-image: url('imagenes/Enterizo2.jpg');"></div>
+    <div class="info">
+        <h3>Producto 5</h3>
+        <p>ponle info de tus productos</p>
+        <p class="price">52.00 bs</p>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+    </div>
+</div>
+
+<div class="card" data-id="1" data-name="Galletas para gatos" data-price="20">
+    <div class="image default" style="background-image: url('img/6.jpg');"></div>
+    <div class="image hover" style="background-image: url('imagenes/galleta2.jpg');"></div>
+    <div class="info">
+        <h3>Producto 6</h3>
+        <p>ponle info de tus productos</p>
+        <p class="price">20.00 Bs</p>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+    </div>
+</div>
+
+
+<div class="card" data-id="2" data-name="Galletas Horneadas Pollo" data-price="25">
+    <div class="image default" style="background-image: url('img/173610-800-800\ \(1\).jpg');"></div>
+    <div class="image hover" style="background-image: url('imagenes/image\ 23.jpg');"></div>
+    <div class="info">
+        <h3>Producto 7</h3>
+        <p>ponle info de tus productos</p>
+        <p class="price">25.00 Bs</p>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+    </div>
+</div>
+
+
+<div class="card" data-id="3" data-name="Fuente eléctrica de agua botellón" data-price="220">
+    <div class="image default" style="background-image: url('img/4.jpg');"></div>
+    <div class="image hover" style="background-image: url('imagenes/cero1.jpg');"></div>
+    <div class="info">
+        <h3>Producto 8</h3>
+        <p>ponle info de tus productos</p>
+        <p class="price">220.00 Bs</p>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+    </div>
+</div>
+
+
+<div class="card" data-id="4" data-name="Pechera reflectiva con correa" data-price="118">
+    <div class="image default" style="background-image: url('img/6.jpg');"></div>
+    <div class="image hover" style="background-image: url('imagenes/pechera1.jpg');"></div>
+    <div class="info">
+        <h3>Producto 9</h3>
+        <p>ponle info de tus productos</p>
+        <p class="price">118.00 Bs</p>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+    </div>
+</div>
+
+
+<div class="card" data-id="5" data-name="Cepillo doble" data-price="12">
+    <div class="image default" style="background-image: url('img/4.jpg');"></div>
+    <div class="image hover" style="background-image: url('imagenes/Cepillo1.jpg');"></div>
+    <div class="info">
+        <h3>Producto 10</h3>
+        <p>ponle info de tus productos</p>
+        <p class="price">12.00 Bs</p>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+    </div>
+</div>
+</div>
+
+<div class="cart" id="cartContainer">
+  <h3>Carrito</h3>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+      <span>Total: Bs<span id="totalPrice">0</span></span>
+      <button onclick="checkout()">Comprar</button>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+<script>
+
+const cart = [];
+
+
+function addToCart(event) {
+    const card = event.target.closest('.card');
+    const id = card.getAttribute('data-id');
+    const name = card.getAttribute('data-name');
+    const price = parseFloat(card.getAttribute('data-price'));
+
+    const item = { id, name, price };
+    cart.push(item);
+    updateCart();
+}
+function toggleCart() {
+    const cartContainer = document.getElementById('cartContainer');
+    const toggleButton = document.getElementById('toggleCartButton');
+    
+    if (cartContainer.style.display === 'none') {
+        cartContainer.style.display = 'block';
+        toggleButton.textContent = 'Ocultar Carrito';
+    } else {
+        cartContainer.style.display = 'none';
+        toggleButton.textContent = 'Mostrar Carrito';
+    }
+}
+
+
+function removeFromCart(id) {
+    const index = cart.findIndex(item => item.id === id);
+    if (index !== -1) {
+        cart.splice(index, 1);
+        updateCart();
+    }
+}
+
+
+function updateCart() {
+    const cartItems = document.getElementById('cartItems');
+    const totalPrice = document.getElementById('totalPrice');
+
+    cartItems.innerHTML = '';
+    let total = 0;
+
+    cart.forEach(item => {
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+        cartItem.innerHTML = `
+            <span>${item.name} - Bs${item.price.toFixed(2)}</span>
+            <button onclick="removeFromCart('${item.id}')">Eliminar</button>
+        `;
+        cartItems.appendChild(cartItem);
+        total += item.price;
+    });
+
+    totalPrice.textContent = total.toFixed(2);
+}
+function checkout() {
+    if (cart.length === 0) {
+        alert('El carrito está vacío');
+    } else {
+        alert('¡Compra realizada con éxito!');
+        cart.length = 0; 
+        updateCart();
+    }
+}
+function toggleCart() {
+    const cartContainer = document.getElementById('cartContainer');
+    if (cartContainer.style.display === 'none') {
+        cartContainer.style.display = 'block';
+    } else {
+        cartContainer.style.display = 'none';
+    }
+}
+function checkout() {
+    if (cart.length === 0) {
+        alert('El carrito está vacío');
+    } else {
+
+        window.location.href = 'https://www.instagram.com/its.bonixx/';
+    }
+}
+</script>
+<footer class="footer">
+    <div class="footer-content">
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/its.bonixx/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+        <a href="https://youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+        <a href="https://vimeo.com" target="_blank" class="vimeo"><i class="fab fa-vimeo"></i></a>
+      </div>              
+  </footer>
+</body>
+</html>
